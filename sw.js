@@ -2,9 +2,9 @@
 const CACHE_NAME = 'task-1';
 
 const urlsToCache = [
-'/task2',
-'/task2/scripts/app.js',
-'/task2/sw.js'
+'/',
+'/scripts/app.js',
+'/sw.js'
 ];
 var our_db;
 const serverImageParams = {
@@ -90,11 +90,6 @@ self.addEventListener('fetch', event => {
           console.info("fetch request response from cache" + response);
           return response;
         }
-      }, err => {
-        return handleUrl(event, newUrl, false);
-      })
-      .catch(err => {
-        console.error(err);
       }));
   }
 
