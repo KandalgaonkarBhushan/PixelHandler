@@ -2,9 +2,9 @@
 const CACHE_NAME = 'task-1';
 
 const urlsToCache = [
-'/',
-'/scripts/app.js',
-'/sw.js'
+'/PixelHandler',
+'/PixelHandler/scripts/app.js',
+'/PixelHandler/sw.js'
 ];
 var our_db;
 const serverImageParams = {
